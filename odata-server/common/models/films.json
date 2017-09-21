@@ -1,0 +1,37 @@
+{
+  "name": "films",
+  "base": "PersistedModel",
+  "plural": "films",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "id": true,
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "did": {
+      "type": "number",
+      "required": true
+    },
+    "date_prod": {
+      "type": "date"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "len": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

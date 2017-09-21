@@ -1,6 +1,12 @@
 {
   "db": {
+    "host": "192.168.99.100",
+    "port": 32770,
+    "database": "postgres",
+    "username": "root",
+    "password": "root",
     "name": "db",
-    "connector": "memory"
+    "connector": "postgresql",
+    "debug": true
   }
 }

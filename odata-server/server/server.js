@@ -2,8 +2,11 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var bodyParser = require('body-parser');
 
 var app = module.exports = loopback();
+// parse application/json
+app.use(bodyParser.json());
 
 app.start = function() {
   // start the web server
